@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #2980ff;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #00ffee;
+  border-bottom: 2px solid #00ffee;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+}
+
+.intro {
+  max-width: 50%;
+}
+
+.intro h2 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.intro h2 span {
+  color: #2980ff;
+  text-shadow: 0 0 15px #2980ff;
+}
+
+.intro p {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.buttons a {
+  padding: 12px 20px;
+  margin-right: 15px;
+  background: #2980ff;
+  color: white;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.buttons a.secondary {
+  background: #222;
+  border: 1px solid #aaa;
+}
+
+.section {
+  padding: 60px 10%;
+}
+
+.section h2 {
+  color: #00ffee;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+#about {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  padding: 60px 10%;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  background: #111;
+  padding: 10px 20px;
+  border: 1px solid #00ffee;
+  border-radius: 25px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #00ffcc;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #00ffee;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  font-size: 0.9rem;
+  color: #aaa;
+}
